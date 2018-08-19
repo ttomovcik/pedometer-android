@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/stepCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="32dp"
+        android:text="0"
+        android:textColor="@color/colorStepsCountText"
+        android:textSize="96sp"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/imageButton_start"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/content_description_start"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_play_circle_outline_white_48dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/imageButton_stop"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_below="@+id/stepCount"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/content_description_stop"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_pause_circle_outline_white_48dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/helper_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorStepsCountText"
+        android:paddingTop="16dp"
+        android:layout_below="@+id/imageButton_start"
+        android:layout_centerHorizontal="true"
+        android:text="@string/help_get_started" />
+
+    <Button
+        android:id="@+id/button_action_openAlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/help"
+        tools:targetApi="lollipop" />
+
+
+</RelativeLayout>
