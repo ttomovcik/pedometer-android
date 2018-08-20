@@ -3,5 +3,4 @@
     <string name="content_description_start">ImageButton with action "Start counting"</string>
     <string name="content_description_stop">ImageButton with action "Stop counting"</string>
     <string name="help_get_started">Get started by tapping the button above</string>
-    <string name="help">Help</string>
 </resources>
