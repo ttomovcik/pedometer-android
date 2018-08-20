@@ -48,6 +48,8 @@ public class StepDetector
 
         float normalization_factor = SensorFilter.norm(worldZ);
 
+        // AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
         worldZ[0] = worldZ[0] / normalization_factor;
         worldZ[1] = worldZ[1] / normalization_factor;
         worldZ[2] = worldZ[2] / normalization_factor;

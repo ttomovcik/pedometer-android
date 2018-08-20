@@ -192,3 +192,10 @@ public class MainActivity extends AppCompatActivity
         });
     }
 }
+
+/*
+* You might be wondering...
+* "But this is on GitHub, anyone can clone the code, remove AdMob shit and compile it"
+* And you´re right. This is one of my first apps where I learn the basics and then move onto something else..
+* So yeah, have fun. ⊂(◉‿◉)つ
+*/
